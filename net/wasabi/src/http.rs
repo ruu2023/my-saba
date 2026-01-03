@@ -73,7 +73,7 @@ impl HttpClient {
                 }
             };
 
-            if bytes_read -- 0 {
+            if bytes_read == 0 {
                 break;
             }
             reaceived.extend_from_slice(&buf[..bytes_read]);
